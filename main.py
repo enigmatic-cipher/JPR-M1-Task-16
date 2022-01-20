@@ -7,6 +7,9 @@ Output-> 17
 n = 2456
 ln = len(str(n))
 total = 0
+dig = 0
 for i in range(1,ln+1):
-  
-
+  dig = n%10
+  total = total + dig
+  n = n/10
+print(total)
